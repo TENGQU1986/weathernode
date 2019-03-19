@@ -2,7 +2,7 @@ console.log('Client side js file is loaded')
 
 const getWeather = async (location) => {
   try {
-    const response = await fetch(`http://localhost:3000/weather?search=${location}`)
+    const response = await fetch(`/weather?search=${location}`)
     const data = await response.json()
     return data
   } catch (error) {
